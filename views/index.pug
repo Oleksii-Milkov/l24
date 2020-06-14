@@ -1,0 +1,8 @@
+extend ./layout/layout
+
+block content
+    div.container
+    form(action="/makeCoffee", method="post").d-flex.justify-content-around
+        button(type="action" data-coffeeName="Espresso").btn.btn-primary.btn-lg Еспрессо
+        button(type="action" data-coffeeName="Latte").btn.btn-primary.btn-lg Латте
+        button(type="action" data-coffeeName="Americano").btn.btn-primary.btn-lg Американо
